@@ -7,34 +7,50 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+:root {
+    --background: 28 100% 98%;
+    --foreground: 156 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 156 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 156 40% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 156 60% 25%;
+    --primary-foreground: 28 100% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 25% 85%;
+    --secondary-foreground: 156 40% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 15% 92%;
+    --muted-foreground: 156 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 156 45% 35%;
+    --accent-foreground: 28 100% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 28 100% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 156 60% 25%;
+
+    /* Custom sustainability colors */
+    --earth-brown: 25 45% 35%;
+    --leaf-green: 156 60% 25%;
+    --sage-green: 156 25% 65%;
+    --cream: 45 60% 95%;
+    --forest-dark: 156 40% 15%;
+    
+    /* Gradients */
+    --gradient-nature: linear-gradient(135deg, hsl(var(--leaf-green)), hsl(var(--sage-green)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--leaf-green)) 0%, hsl(var(--earth-brown)) 100%);
+    
+    /* Shadows */
+    --shadow-gentle: 0 4px 20px -4px hsl(var(--leaf-green) / 0.1);
+    --shadow-nature: 0 8px 32px -8px hsl(var(--leaf-green) / 0.15);
 
     --radius: 0.5rem;
 
